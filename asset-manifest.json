@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hyebyjun/moviemove/static/css/main.d6dffe7f.css",
+    "main.js": "/hyebyjun/moviemove/static/js/main.f506b6c5.js",
+    "index.html": "/hyebyjun/moviemove/index.html",
+    "main.d6dffe7f.css.map": "/hyebyjun/moviemove/static/css/main.d6dffe7f.css.map",
+    "main.f506b6c5.js.map": "/hyebyjun/moviemove/static/js/main.f506b6c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6dffe7f.css",
+    "static/js/main.f506b6c5.js"
+  ]
+}
