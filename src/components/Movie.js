@@ -25,6 +25,10 @@ function Movie({ id, coverImg, title, year, rating, genres, summary }) {
   );
 }
 
+// https://bangdonghyuk.github.io/react-for-beginners/
+// https://10009ukk.github.io/react-movie
+// 꾸미기 참고용 링크들
+
 Movie.propTypes = {
   id: PropTypes.number.isRequired,
   coverImg: PropTypes.string.isRequired,
