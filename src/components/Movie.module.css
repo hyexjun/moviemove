@@ -29,8 +29,7 @@
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
-.movie__title,
-.movie__year {
+.movie__title {
   margin: 10px auto;
   font-weight: 300;
   text-decoration: none;
@@ -44,6 +43,14 @@
   text-decoration: none;
 }
 
+.movie__year {
+  margin-top: 15px;
+}
+.movie__year span {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
 .movie__genres {
   list-style: none;
   padding: 0;
@@ -54,8 +61,8 @@
   font-style: italic;
 }
 
-.movie__genres li,
-.movie__year {
+.movie__genres li {
   margin-right: 10px;
   font-size: 16px;
+  font-weight: 400;
 }

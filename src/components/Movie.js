@@ -2,15 +2,18 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styles from './Movie.module.css';
 
-function Movie({ id, coverImg, title, year, summary, genres }) {
+function Movie({ id, coverImg, title, year, rating, genres, summary }) {
   return (
     <div className={styles.movie}>
       <img src={coverImg} alt={title} className={styles.movie__img} />
       <div className={styles.movie__box}>
         <h2 className={styles.movie__title}>
-          <Link to={`/movie/${id}`}>{title} ({year})</Link>
+          <Link to={`/movie/${id}`}>{title}</Link>
         </h2>
-        {/* <span className={styles.movie__year}></span> */}
+        <div className={styles.movie__year}>
+          <span>{year}</span>
+          <span>{Number(rating).toFixed(1)}</span>
+        </div>
         <ul className={styles.movie__genres}>
           {genres.map((g) => (
             <li key={g}>{g}</li>

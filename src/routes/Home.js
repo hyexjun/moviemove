@@ -8,7 +8,7 @@ function Home() {
   const getMovies = async () => {
     const json = await (
       await fetch(
-        `https://yts.mx/api/v2/list_movies.json?minimum_rating=8.0&sort_by=year`
+        `https://yts.mx/api/v2/list_movies.json?minimum_rating=5.0&sort_by=year`
       )
     ).json();
     setMovies(json.data.movies);
@@ -29,11 +29,12 @@ function Home() {
             <Movie
               key={movie.id}
               id={movie.id}
-              year={movie.year}
               coverImg={movie.medium_cover_image}
               title={movie.title}
-              summary={movie.summary}
+              year={movie.year}
+              rating={movie.rating}
               genres={movie.genres}
+              summary={movie.summary}
             />
           ))}
         </div>
