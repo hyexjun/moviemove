@@ -18,7 +18,7 @@ function Detail() {
     getMovie();
   }, []);
   return loading ? (
-    <div>Loading...</div>
+    <div className={styles.loader}>Loading...</div>
   ) : (
     <div className={styles.wrap}>
       <img className={styles.movie__img} src={details.large_cover_image} alt={details.title} />
